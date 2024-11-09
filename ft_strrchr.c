@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:46:50 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/09 09:55:36 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 10:09:06 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	chr = (char)c;
 	while (i > 0 && chr != s[i])
 		i--;
-	if (s[i])
+	if (s[i] == chr)
 		return ((char *)s + 1);
 	else
 		return (NULL);
