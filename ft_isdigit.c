@@ -6,13 +6,13 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:54:34 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/04 10:50:05 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:44:02 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

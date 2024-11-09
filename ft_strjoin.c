@@ -6,16 +6,16 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:45:26 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/04 11:29:21 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:52:08 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcat(char *s1, const char *s2)
+static	char	*ft_strcat(char *s1, const char *s2)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -30,9 +30,9 @@ char *ft_strcat(char *s1, const char *s2)
 	return (s1);
 }
 
-char  *ft_cpy(const char *s1, char *dest)
+static	char	*ft_cpy(const char *s1, char *dest)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s1[i])
@@ -44,7 +44,7 @@ char  *ft_cpy(const char *s1, char *dest)
 	return (dest);
 }
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
 	char	*cpy;

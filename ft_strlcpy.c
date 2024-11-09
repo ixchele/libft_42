@@ -6,13 +6,13 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:46:36 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/07 09:51:41 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:53:03 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *des, const char *src, size_t size)
+size_t	ft_strlcpy(char *des, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	j;
@@ -31,4 +31,3 @@ size_t ft_strlcpy(char *des, const char *src, size_t size)
 	des[j] = '\0';
 	return (i);
 }
-

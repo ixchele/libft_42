@@ -1,12 +1,12 @@
-
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
+/*   By: zbengued <zbengued@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/06 11:36:33 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/07 16:22:31 by zbengued         ###   ########.fr       */
+/*   Created: 2024/11/09 09:45:05 by zbengued          #+#    #+#             */
+/*   Updated: 2024/11/09 09:46:49 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t 			i;
+	size_t			i;
 	unsigned char	*ptrs;
 	unsigned char	*ptrd;
-	
+
 	if (!dest && !src)
 		return (NULL);
 	ptrs = (unsigned char *)src;
-	ptrd = (unsigned char *)dest; 
+	ptrd = (unsigned char *)dest;
 	i = 0;
 	while (i++ < n)
 		ptrd[i - 1] = ptrs[i - 1];
-	return(dest);
+	return (dest);
 }
-

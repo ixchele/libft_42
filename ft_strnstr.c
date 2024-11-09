@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:39:41 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/04 12:50:32 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:55:00 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 
 	if (!to_find[0])
 		return ((char *)str);
-	for (i = 0; str[i] && i < len; i++)
+	i = 0;
+	while (str[i] && i < len)
 	{
 		if (str[i] == to_find[0])
 		{
@@ -29,6 +30,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 			if (!to_find[y])
 				return ((char *)(str + i));
 		}
+		i++;
 	}
 	return (NULL);
 }

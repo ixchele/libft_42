@@ -6,13 +6,13 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:36:16 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/04 12:54:56 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:43:50 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }

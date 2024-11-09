@@ -6,13 +6,13 @@
 /*   By: zbengued <zbengued@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:37:15 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/02 11:17:06 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:56:33 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (c + 32);

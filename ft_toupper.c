@@ -6,14 +6,15 @@
 /*   By: zbengued <zbengued@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:35:30 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/02 16:06:14 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:58:10 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
-{	if (c >= 97 && c <= 122)
-		return(c - 32);
+int	ft_toupper(int c)
+{
+	if (c >= 97 && c <= 122)
+		return (c - 32);
 	return (c);
 }

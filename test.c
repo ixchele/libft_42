@@ -4,9 +4,12 @@
 
 int main ()
 {
-	char *src;
-	char dest[20];
+	char s[] = "zakaria";
+	char d1[10];
+	char d2[10];
 
-	printf("%s\n", memcmp(NULL, NULL, 5));
-	//printf("%s\n", (char *)ft_memmove(src+3, src, 6));
+	char *ptr1 = memmove(&s[2], s, 7);
+	char *ptr2 = ft_memmove(&s[2], s, 7);
+	printf("%s\n", ptr1);
+	printf("%s\n", ptr2);
 }

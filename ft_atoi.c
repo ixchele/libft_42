@@ -6,13 +6,13 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:12:01 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/04 17:14:27 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:41:16 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	signe;
@@ -36,4 +36,3 @@ int ft_atoi(const char *str)
 	}
 	return (x * signe);
 }
-
