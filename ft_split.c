@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:21:55 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/10 13:55:09 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/10 14:02:45 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,13 @@ static size_t	count_word(char const *s, char c)
 	return (count);
 }
 
+void	freer(char **tab, size_t i)
+{
+	while (i > 0)
+		free(tab[--i]);
+	free(tab);
+}
+
 static char	**splinter(char **tab, char const *s, size_t i, char c)
 {
 	size_t	start;
@@ -53,11 +60,7 @@ static char	**splinter(char **tab, char const *s, size_t i, char c)
 		}
 		tab[j] = ft_substr(s, start, word_len);
 		if (!tab[j])
-		{
-			while (i > 0)
-				free(tab[--i]);
-			free(tab);
-		}
+			freer(tab, j);
 		j++;
 	}
 	return (tab);
