@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 09:36:45 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/10 10:32:24 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:38:18 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ static int	val_abs(int n)
 	return (n);
 }
 
-static int	digit_cnt(int n)
+static size_t	digit_cnt(int n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (n <= 0)
@@ -36,9 +36,9 @@ static int	digit_cnt(int n)
 
 static char	*ft_inv(char *str)
 {
-	int		i;
-	int		j;
-	char	x;
+	size_t		i;
+	size_t		j;
+	char		x;
 
 	i = 0;
 	j = 0;
@@ -58,9 +58,9 @@ static char	*ft_inv(char *str)
 
 char	*ft_itoa(int n)
 {
-	int		i;
-	char	*ptr;
-	int		n_index;
+	size_t		i;
+	char		*ptr;
+	size_t		n_index;
 	
 	if (n == 0)
 		return (ft_strdup("0"));

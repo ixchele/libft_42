@@ -4,8 +4,5 @@
 
 int main ()
 {
-	char **str = ft_split("alskdn,ahd,khfs,asdh", ',');
-	int i = 0;
-	while (str[i])
-		printf("%s\n", str[i++]);
+	printf("%s\n", ft_substr("i just want this part ##########", 0, 22));
 }
