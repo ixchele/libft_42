@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:21:55 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/10 11:08:12 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:09:32 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static size_t	count_words_len(char const *str, char c, int mode, int j)
 				i++;
 			else
 			{
-				count++;
+				cont++;
 				while (str[i] && str[i] != c)
 					i++;
 			}
