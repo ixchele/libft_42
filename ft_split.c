@@ -6,28 +6,19 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:21:55 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/10 11:37:04 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:46:08 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_word_and_len(char const *s, char c, int mode, size_t j)
+static size_t	count_word(char const *s, char c)
 {
 	size_t	i;
 	size_t	count;
 
 	i = 0;
 	count = 0;
-	if (mode == 1)
-	{
-		while (s[j] && s[j] != c)
-		{
-			j++;
-			count++;
-		}
-		return (count);
-	}
 	while (s[i])
 	{
 		if (s[i] == c)
@@ -55,24 +46,29 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	size_t	i;
 	size_t	j;
+	size_t	word_len
 
 	if (!s) 
 		return (NULL);
 	i = 0;
 	j = 0;
-	tab = ft_calloc(count_word_and_len(s, c, 0, 0), sizeof(char *));
+	tab = ft_calloc(count_word(s, c), sizeof(char *));
 	if (!s)
 		return (NULL);
-    while (j < count_word_and_len(s, c, 0, 0))
+    while (j < count_word(s, c))
     {
+		word_len = 0;
         while (s[i] == c && s[i])
             i++;
-        tab[j] = ft_substr(s, i, count_word_and_len(s, c, 1, i));
+		while (s[i] != c && s[i])
+		{
+			i++;
+			word_len++;
+		}
+        tab[j] = ft_substr(s, i, word_len);
         if (!tab[j])
             ft_freer(tab, j);
         j++;
-        while (s[i] != c && s[i])
-            i++;
     }
 	return (tab);
 }
