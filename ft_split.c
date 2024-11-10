@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:21:55 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/10 13:35:11 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/10 13:36:18 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,6 @@ char	**ft_split(char const *s, char c)
 	tab = ft_calloc(count_word(s, c) + 1, sizeof(char *));
 	if (!tab)
 		return (NULL);
-	tab = splinter(tab, s, i, j, word_len);
+	tab = splinter(tab, s, i, j);
 	return (tab);
 }
