@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 10:56:12 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/09 10:00:13 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:15:29 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	char		*ptr;
 	size_t		i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	ptr = (char *)s;
 	while (i < n)
