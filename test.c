@@ -4,6 +4,8 @@
 
 int main ()
 {
-	char str[] = "zakaria wa3r";
-	printf("%s\n", ft_strrchr(str, '\0'));
+	char **str = ft_split("alskdn,ahd,khfs,asdh", ',');
+	int i = 0;
+	while (str[i])
+		printf("%s\n", str[i++]);
 }
