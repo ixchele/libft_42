@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:21:55 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/10 11:52:46 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:55:31 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	i = 0;
 	j = 0;
-	tab = ft_calloc(count_word(s, c), sizeof(char *));
+	tab = ft_calloc(count_word(s, c) + 1, sizeof(char *));
 	if (!s)
 		return (NULL);
     while (j < count_word(s, c))
@@ -65,7 +65,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 			word_len++;
 		}
-        tab[j] = ft_substr(s, i - 1, word_len);
+        tab[j] = ft_substr(s, i, word_len);
         if (!tab[j])
             ft_freer(tab, j);
         j++;
