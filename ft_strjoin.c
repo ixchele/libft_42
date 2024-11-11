@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:45:26 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/11 17:41:08 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:02:56 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
 	size_t	ptr_size;
-
 
 	if (!s1 || !s2)
 		return (NULL);

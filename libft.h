@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 10:08:34 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/11 17:57:22 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:04:26 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
 
 int		ft_isprint(int c);
 void	*ft_calloc(size_t nmemb, size_t size);
