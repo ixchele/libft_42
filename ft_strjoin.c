@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:45:26 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/11 10:17:50 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/11 10:18:26 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	ptr_size = ft_strlen(s1) + ft_strlen(s2) + 1
+	ptr_size = ft_strlen(s1) + ft_strlen(s2) + 1;
 	ptr = malloc(sizeof(char) * (ptr_size);
 	if (!ptr)
 		return (NULL);
