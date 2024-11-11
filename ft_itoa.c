@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 09:36:45 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/10 10:38:18 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:14:08 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ char	*ft_itoa(int n)
 	if (n == 0)
 		return (ft_strdup("0"));
 	if (n == 2147483647)
-		return (ft_strdup("2147483647"));
+		return (ft_strdup("-2147483648"));
 	i = 0;
 	n_index = n;
 	ptr = malloc(sizeof(char) * (digit_cnt(n) + 1));
