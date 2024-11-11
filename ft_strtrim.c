@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 08:58:46 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/11 09:31:11 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:38:27 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = jump_start(s1, set);
 	j = jump_end(s1, set);
 	l = 0;
+	if (i > j)
+		return (ft_strdup(""));
 	ptr = malloc(sizeof(char) * (j - i + 2));
 	if (!ptr)
 		return (NULL);
