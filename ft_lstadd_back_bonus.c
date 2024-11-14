@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 21:08:50 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/11 21:23:08 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/14 10:04:11 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	if (!*lst)
 		*lst = new;
-	else 
+	else
 	{
 		last = ft_lstlast(*lst);
 		last->next = new;
