@@ -14,8 +14,6 @@ $(NAME): $(OBJ)
 	$(AR) $(ARFLAGS) $(NAME) $^
 bonus: $(OBJB)
 	$(AR) $(ARFLAGS) $(NAME) $^
-%.o: %.c
-	$(CC) $(CFLAGS) -c $^ -o $@
 clean:
 	rm -f $(OBJ) $(OBJB)
 fclean: clean
@@ -24,4 +22,4 @@ re: fclean all
 
 .PHONY: all clean fclean re
 
-.SECONDARY: $(OBJB)
+.SECONDARY: $(OBJB) $(OBJ)
