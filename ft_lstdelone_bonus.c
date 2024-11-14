@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:19:18 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/12 11:38:42 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/14 09:46:07 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	ft_lstdelone(t_list *lst, void(*del)(void *))
 {
 	if (!lst || !del)
 		return ;
-	if (!lst->content)
-		del(lst->content);
+	del(lst->content);
 	free(lst);
 }

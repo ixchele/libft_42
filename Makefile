@@ -11,7 +11,7 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(AR) $(ARFLAGS) $(NAME) $<
+	$(AR) $(ARFLAGS) $(NAME) $^
 bonus: $(OBJB)
 	$(AR) $(ARFLAGS) $(NAME) $^
 %.o: %.c
