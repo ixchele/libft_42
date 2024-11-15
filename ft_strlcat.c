@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 10:20:31 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/09 09:52:36 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/15 19:21:18 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	j;
 
+	if (dstsize == 0)
+		return (ft_strlen(src));
 	i = 0;
 	j = ft_strlen(dst);
 	if (dstsize <= j)

@@ -6,7 +6,7 @@
 /*   By: zbengued <zbengued@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:46:36 by zbengued          #+#    #+#             */
-/*   Updated: 2024/11/09 09:53:03 by zbengued         ###   ########.fr       */
+/*   Updated: 2024/11/15 19:05:28 by zbengued         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ size_t	ft_strlcpy(char *des, const char *src, size_t size)
 
 	i = 0;
 	j = 0;
-	while (src[i])
-		i++;
 	if (size == 0)
 		return (ft_strlen(src));
+	while (src[i])
+		i++;
 	while (j < size - 1 && src[j])
 	{
 		des[j] = src[j];
